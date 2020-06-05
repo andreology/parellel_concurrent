@@ -1,4 +1,4 @@
-# Demonstration on the thread lifecycle
+# Demonstration on the threads and processes
 ## The basics of concurrent and parallel programming in C++
 providing the foundational knowledge you need to write more efficient, performant code.
 
