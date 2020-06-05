@@ -8,7 +8,7 @@ bool brew = true;
 
 void brew_coffee(const char* coffeeType) {
   unsigned int coffeeCount = 0;
-  while(brewing) {
+  while(brew) {
     coffeeCount++;
   }
   printf("%s brewing %u coffee.\n", coffeeType, coffeeCount);
@@ -22,7 +22,8 @@ int main() {
   printf("colombian and pike place coffee beans are brewing! \n");
   std::this_thread::sleep_for(std::chrono::seconds(1));
   brew = false;
-  //stop gracefully
+  //stop gracefully. if one thread is done the other will wail for other threads
+  //to finish. moving into terminate state in lifescycle 
   machine.join();
   machine0.join();
 }
