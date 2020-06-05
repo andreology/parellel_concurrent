@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 # Demonstration on the thread and processes
+=======
+# Demonstration on the threads and processes
+>>>>>>> 2786c70392f14fd3ad1c9d2e0cfe85b95c8cdae6
 ## The basics of concurrent and parallel programming in C++
 providing the foundational knowledge you need to write more efficient, performant code.
 
